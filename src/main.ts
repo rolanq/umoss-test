@@ -1,7 +1,7 @@
 import "./style.css";
 import { setupToolbar } from "./components/toolbar/toolbar";
 import type { AppState } from "./types/App";
-import { setupSidebar } from "./components/sidebar";
+import { setupSidebar } from "./components/sidebar/sidebar";
 import { setupEditor } from "./components/editor";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `

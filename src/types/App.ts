@@ -6,6 +6,7 @@ export type TreeItem = {
   type: "folder" | "file";
   content?: string;
   size?: number;
+  description?: string;
 };
 
 export type OpenTab = {

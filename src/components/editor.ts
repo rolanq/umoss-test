@@ -2,9 +2,9 @@ import type { AppState } from "../types/App";
 import {
   renderTabs,
   renderFileContent,
-  closeTab,
   switchToTab,
-} from "../utils/utils";
+  closeTab,
+} from "../utils/tab";
 
 export function setupEditor(appState: AppState) {
   const tabsContainer = document.querySelector(".tabs") as HTMLDivElement;

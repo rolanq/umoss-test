@@ -1,11 +1,11 @@
 import type { AppState } from "../../../types/App";
+import { generateId } from "../../../utils/helpers";
 import {
-  generateId,
   findTreeItemById,
   addChildToTreeItem,
   deleteTreeItem,
-} from "../../../utils/utils";
-import { renderTree } from "../../sidebar";
+} from "../../../utils/tree";
+import { renderTree } from "../../sidebar/sidebar";
 
 export const uploadFile = (appState: AppState, projectTree: HTMLDivElement) => {
   const fileInput = document.createElement("input");

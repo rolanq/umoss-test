@@ -1,0 +1,96 @@
+.editor-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 6px;
+}
+
+.tabs {
+  border-bottom: 2px solid #316ac5;
+  display: flex;
+  padding: 0;
+  flex-shrink: 0;
+  min-height: 32px;
+  overflow-x: auto;
+}
+
+.tab {
+  opacity: 0.4;
+  background-color: #ffffff;
+  border: 1px solid #316ac5;
+  border-bottom: none;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-size: 11px;
+  color: #000;
+  margin-right: 2px;
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+  max-width: 200px;
+}
+
+.tab.active {
+  opacity: 1;
+  border-bottom: none;
+  z-index: 1;
+  position: relative;
+}
+
+.tab:hover:not(.active) {
+  background-color: #f5f5f5;
+}
+
+.tab-label {
+  flex: 1;
+  padding: 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tab-close {
+  padding: 0 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+  border-radius: 2px;
+  margin-left: 4px;
+}
+
+.code-editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.file-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.file-viewer {
+  flex: 1;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.file-viewer pre {
+  margin: 0;
+  padding: 16px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.file-viewer code {
+  color: #333;
+  background: none;
+}

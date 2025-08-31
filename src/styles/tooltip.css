@@ -1,0 +1,12 @@
+.description-tooltip {
+  position: fixed;
+  background: white;
+  color: black;
+  padding: 8px 12px;
+  font-size: 12px;
+  max-width: 250px;
+  word-wrap: break-word;
+  border: 1px solid #316ac5;
+  z-index: 1000;
+  pointer-events: none;
+}

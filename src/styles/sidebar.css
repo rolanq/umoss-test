@@ -1,0 +1,109 @@
+.sidebar {
+  width: 200px;
+  background-color: white;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.project-tree {
+  flex: 1;
+  padding: 8px 4px;
+  overflow-y: auto;
+}
+
+.tree-item {
+  cursor: pointer;
+  user-select: none;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.tree-level-0 .tree-item-content {
+  margin-left: 0px;
+}
+.tree-level-1 .tree-item-content {
+  margin-left: 12px;
+}
+.tree-level-2 .tree-item-content {
+  margin-left: 24px;
+}
+.tree-level-3 .tree-item-content {
+  margin-left: 32px;
+}
+.tree-level-4 .tree-item-content {
+  margin-left: 40px;
+}
+
+.tree-item.selected {
+  background-color: #316ac5;
+  color: white;
+}
+
+.tree-item.editing {
+  background-color: #e6f3ff;
+}
+
+.tree-item.editing .tree-label {
+  display: none;
+}
+
+.tree-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: #666;
+}
+
+.tree-toggle:hover {
+  color: #333;
+}
+
+.tree-item.expanded .tree-toggle {
+  transform: rotate(90deg);
+}
+
+.tree-toggle-placeholder {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.tree-icon {
+  display: inline-block;
+  width: 16px;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.tree-label {
+  vertical-align: top;
+}
+
+.tree-label-input {
+  background: #ffffff;
+  border: 1px solid #316ac5;
+  border-radius: 2px;
+  padding: 1px 4px;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  width: 120px;
+}
+
+.tree-item.has-description .tree-label::after {
+  content: "";
+  margin-left: 4px;
+  font-size: 12px;
+  opacity: 0.7;
+}
